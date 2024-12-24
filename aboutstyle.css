@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: "Acme", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('mainbg.webp') no-repeat center center;
+    background-size: cover;
+    background-color: #cdcdcd;
+    position: relative; /* Ensures child elements can use absolute positioning */
+}
+
+.overlay-container {
+    position: absolute; /* Ensures container is above the background */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    flex-wrap: wrap; /* Allows images to wrap to the next line if needed */
+}
+
+.overlay-image {
+    position: relative; /* Enables positioning adjustments without affecting others */
+    max-width: 90%; /* Adjust image size */
+}
+
+/* Individual adjustments for images */
+.overlay-image.image1 {
+    width: 57%;
+    top: 40px;
+    right: -220px; /* Moves image left by 50px */
+}
+
+.overlay-image.image2 {
+    width: 23%;
+    bottom: -110px; /* Moves image up from the bottom by 100px */
+    left: -590px; /* Moves image left by 20px */
+}
+
+.overlay-image.image3 {
+    width: 42%;
+    top: -480px; /* Moves image down by 20px */
+    left: 620px; /* Moves image right by 30px */
+}
+
+.overlay-image.image4 {
+    width: 32%;
+    bottom: 800px; /* Moves image up from the bottom by 100px */
+    left: -475px; /* Moves image left by 20px */
+}
+
+.overlay-image.image5 {
+    width: 17%;
+    bottom: 930px;
+    right: 550px;
+}
+
+.overlay-image.image6 {
+    width: 20%;
+    bottom: 953px;
+    right: 1000px;
+}
+
+.overlay-image.image7 {
+    width: 30%;
+    bottom: 203px;
+    right: 550px;
+}
+
+
+.overlay-image.image8 {
+    width: 15%;
+    bottom: 1142px;
+    right: 480px;
+}
+
+.about-logo {
+    margin-bottom: 90px;
+    margin-left: 200px;
+    font-size: 40px;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.about-logostyle {
+    font-family: "acme", sans-serif;
+    background-color: #fb9900;
+    opacity: 100%;
+    width: 195px;
+    margin-left: 12px;
+    border-radius: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+    z-index: 2; /* Ensure it appears above the overlay images */
+}
